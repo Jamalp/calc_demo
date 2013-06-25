@@ -34,6 +34,18 @@ get '/calc/add/:first/:second' do
   return (@first + @second).to_s
 end
 
+get '/calc/subtract/:first/:second' do
+  @first = params[:first].to_i
+  @second = params[:second].to_i
+  return (@first - @second).to_s
+end
+
+get '/calc/divide/:first/:second' do
+  @first = params[:first].to_i
+  @second = params[:second].to_i
+  return (@first / @second).to_s
+end
+
 get '/calc/multiply/:first/:second' do
   @first = params[:first].to_i
   @second = params[:second].to_i
