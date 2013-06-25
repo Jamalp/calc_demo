@@ -71,5 +71,5 @@ get '/calc/:first/:operation/:second' do
     when "product" then @first * @second
     when "quotient" then @first / @second
   end
-  return @result.to_s
+  erb :calc
 end
