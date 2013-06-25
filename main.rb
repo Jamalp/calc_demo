@@ -53,3 +53,7 @@ get '/calc/multiply/:first/:second' do
   return (@first * @second).to_s
 end
 
+get '/oh_hai/:name' do
+  @name = params[:name]
+  erb :hai
+end
